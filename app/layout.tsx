@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Varela } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/sections/navbar";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const varela = Varela({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-varela",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${varela.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
