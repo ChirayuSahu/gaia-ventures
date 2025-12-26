@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${varela.variable} antialiased overflow-x-hidden`}
+        className={`${varela.variable} antialiased`}
       >
         <Navbar />
         {children}

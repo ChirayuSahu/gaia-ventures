@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-slate-900 text-white font-varela pt-24 pb-12 overflow-hidden">
+    <footer className="w-full bg-slate-900 text-white font-varela pt-24 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* --- Top Section: Brand & Links --- */}
@@ -129,9 +129,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Background Decorative Gradient */}
-      <div className="absolute bottom-0 right-0 w-125 h-125 bg-orange-600/5 rounded-full blur-[120px] -z-10 translate-y-1/2 translate-x-1/4" />
     </footer>
   );
 };
