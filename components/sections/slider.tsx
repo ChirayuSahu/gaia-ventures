@@ -108,7 +108,7 @@ const Slider = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-[2px] w-8 transition-all ${
+            className={`h-0.5 w-8 transition-all ${
               index === currentIndex ? 'bg-white' : 'bg-white/30'
             }`}
           />
